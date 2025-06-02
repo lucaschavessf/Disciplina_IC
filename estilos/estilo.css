@@ -3,7 +3,6 @@ body {
     font-family: Cambria;
 }
 
-/* Estilos para o header e navegação */
 header {
     padding: 1rem;
     text-align: center;
@@ -52,7 +51,6 @@ nav a:hover {
     text-decoration: none;
 }
 
-/* Estilos para links ativos no menu */
 nav a.active {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
@@ -64,7 +62,6 @@ nav a.active:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Estilos para títulos */
 h1 {
     font-size: 2.5rem;
     color: #2c3e50;
@@ -89,7 +86,6 @@ h3 {
     margin: 1rem 0;
 }
 
-/* Estilos para parágrafos */
 p {
     font-size: 1.1rem;
     color: #333;
@@ -98,7 +94,6 @@ p {
     margin: 1rem 0;
 }
 
-/* Estilos para links */
 a {
     color: #00548d;
     text-decoration: none;
@@ -110,7 +105,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Estilos para imagens */
 img {
     display: block;
     margin: 0 auto;
@@ -118,7 +112,6 @@ img {
     height: auto;
 }
 
-/* Estilos para tabelas */
 table {
     width: 100%;
     max-width: 800px;
@@ -151,7 +144,6 @@ tr:hover {
     transition: background-color 0.3s ease;
 }
 
-/* Responsividade para tabelas */
 @media (max-width: 600px) {
     table {
         display: block;
@@ -163,7 +155,6 @@ tr:hover {
     }
 }
 
-/* Estilos para o conteúdo principal */
 main {
     margin-top: 150px;
     max-width: 800px;
@@ -179,12 +170,10 @@ main p {
     max-width: 600px;
 }
 
-/* Classes utilitárias */
 .esconder {
     display: none;
 }
 
-/* Estilos para a seção de resultado */
 #resultado {
     text-align: center;
     margin: 2rem auto;
@@ -198,7 +187,6 @@ main p {
     display: block;
 }
 
-/* Estilos para a seção de imagem gerada */
 #imagem-gerada {
     margin: 0 auto;
     border-radius: 8px;
@@ -206,42 +194,57 @@ main p {
     display: block;
 }
 
-/* Estilos para formulários */
-form {
+main form {
     max-width: 600px;
     margin: 2rem auto;
     padding: 2rem;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
-form label {
+main form label {
     display: block;
-    margin-bottom: 0.5rem;
     color: #2c3e50;
     font-weight: 500;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
 }
 
-form input[type="text"] {
-    width: 80%;
+main form input[type="text"] {
+    width: 100%;
     padding: 0.8rem;
-    margin: 0 auto 1.5rem auto;
     border: 2px solid #e0e0e0;
     border-radius: 4px;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
-    display: block;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
 }
 
-form input[type="text"]:focus {
+main form input[type="text"]:hover {
+    border-color: #00548d;
+    box-shadow: 0 0 8px rgba(0, 84, 141, 0.2);
+}
+
+main form input[type="text"]:focus {
     outline: none;
     border-color: #00548d;
-    box-shadow: 0 0 5px rgba(0, 84, 141, 0.2);
+    box-shadow: 0 0 12px rgba(0, 84, 141, 0.3);
 }
 
-form button {
+main form input[type="text"]:active {
+    border-color: #003d66;
+    box-shadow: 0 0 4px rgba(0, 84, 141, 0.2);
+    transform: translateY(1px);
+}
+
+main form button {
     background-color: #00548d;
     color: white;
     padding: 0.8rem 2rem;
@@ -250,16 +253,25 @@ form button {
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-    margin: 0 auto;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    width: auto;
+    min-width: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-form button:hover {
+main form button:hover {
     background-color: #003d66;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
 
-/* Estilos para a tabela da galeria */
+main form button:active {
+    background-color: #002a4d;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+}
+
 .galeria-table {
     width: 100%;
     border-collapse: collapse;
@@ -284,7 +296,6 @@ form button:hover {
     border-radius: 4px;
 }
 
-/* Estilos para o formulário de contato */
 .contato-form {
     max-width: 600px;
     margin: 2rem auto;
@@ -368,7 +379,6 @@ form button:hover {
     background-color: #c82333;
 }
 
-/* Estilos para a galeria com grid */
 .galeria-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -418,99 +428,6 @@ form button:hover {
     margin-top: auto;
 }
 
-/* Responsividade para a galeria */
-@media (max-width: 900px) {
-    .galeria-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .galeria-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Estilos para o formulário de geração de imagem */
-main form {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-main form label {
-    display: block;
-    color: #2c3e50;
-    font-weight: 500;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 0.5rem;
-}
-
-main form input[type="text"] {
-    width: 100%;
-    padding: 0.8rem;
-    border: 2px solid #e0e0e0;
-    border-radius: 4px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
-}
-
-main form input[type="text"]:hover {
-    border-color: #00548d;
-    box-shadow: 0 0 8px rgba(0, 84, 141, 0.2);
-}
-
-main form input[type="text"]:focus {
-    outline: none;
-    border-color: #00548d;
-    box-shadow: 0 0 12px rgba(0, 84, 141, 0.3);
-}
-
-main form input[type="text"]:active {
-    border-color: #003d66;
-    box-shadow: 0 0 4px rgba(0, 84, 141, 0.2);
-    transform: translateY(1px);
-}
-
-main form button {
-    background-color: #00548d;
-    color: white;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 1rem;
-    width: auto;
-    min-width: 150px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-main form button:hover {
-    background-color: #003d66;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
-}
-
-main form button:active {
-    background-color: #002a4d;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-    transform: translateY(1px);
-}
-
-/* Container do formulário de contato */
 .contato-container {
     display: flex;
     flex-direction: column;
@@ -518,10 +435,13 @@ main form button:active {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+    margin-top: 3rem;
 }
 
 .contato-imagem {
-    display: none;
+    display: block;
+    flex: 1;
+    max-width: 500px;
 }
 
 .contato-imagem img {
@@ -531,29 +451,6 @@ main form button:active {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Layout de duas colunas para telas maiores */
-@media (min-width: 900px) {
-    .contato-container {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 4rem;
-    }
-
-    .contato-form {
-        flex: 1;
-        max-width: 500px;
-        margin: 0;
-    }
-
-    .contato-imagem {
-        display: block;
-        flex: 1;
-        max-width: 500px;
-    }
-}
-
-/* Estilos para a página Sobre */
 .sobre-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -587,25 +484,6 @@ main form button:active {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Layout de duas colunas para telas maiores */
-@media (min-width: 900px) {
-    .sobre-grid {
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        gap: 4rem;
-    }
-
-    .sobre-texto {
-        padding-right: 2rem;
-    }
-
-    .sobre-imagem img {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-/* Botão Voltar ao Topo */
 .voltar-topo {
     position: fixed;
     bottom: 20px;
