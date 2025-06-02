@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <title>Gerar Imagem - Gerador de Imagens com IA</title>
+</head>
+<body>
+    <header>
+        <h1>Gerar Imagem</h1>
+        <nav>
+            <ul>
+                <li><strong><a href="index.html">Página Inicial</a></strong></li>
+                <li><strong><a href="sobre.html">Sobre</a></strong></li>
+                <li><strong><a href="gerar.html" class="active">Gerar Imagem</a></strong></li>
+                <li><strong><a href="galeria.html">Galeria</a></strong></li>
+                <li><strong><a href="contato.html">Contato</a></strong></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Descreva a imagem desejada</h2>
+        <form action="#">
+            <label for="descricao">Descreva a Imagem desejada</label>
+            <input type="text" id="descricao" name="descricao" required>
+            <button type="submit">Gerar</button>
+        </form>
+
+        <div id="resultado" class="esconder">
+            <h3>Imagem Gerada</h3>
+            <img src="https://picsum.photos/400/200" alt="Imagem gerada" id="imagem-gerada">
+            <button type="button" id="esconder-imagem">Esconder Imagem</button>
+        </div>
+        
+        <p><a href="index.html">Voltar para a Página Inicial</a></p>
+    </main>
+    <script src="scripts/gerar.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <title>Sobre - Gerador de Imagens com IA</title>
+</head>
+<body>
+    <header>
+        <h1>Sobre o Projeto</h1>
+        <nav>
+            <ul>
+                <li><strong><a href="index.html">Página Inicial</a></strong></li>
+                <li><strong><a href="sobre.html" class="active">Sobre</a></strong></li>
+                <li><strong><a href="gerar.html">Gerar Imagem</a></strong></li>
+                <li><strong><a href="galeria.html">Galeria</a></strong></li>
+                <li><strong><a href="contato.html">Contato</a></strong></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>O que é o Gerador de Imagens com IA?</h2>
+        <div class="sobre-grid">
+            <div class="sobre-texto">
+                <p>Este projeto é uma representação utilizando html e CSS para mostrar como seria feito o FrontEnd de um gerador de imagens ultilizando 
+                    Inteligência Artifical. A página galeria, seria usada como uma espécie de armazém para imagens geradas e a seção de gerar imagem, 
+                    é a página que seria pedido um promt para gerar a imagem.</p>
+            </div>
+            <div class="sobre-imagem">
+                <img src="https://img.freepik.com/free-vector/ai-technology-brain-background-vector-digital-transformation-concept_53876-124674.jpg" alt="Ilustração de Geração de Imagens com IA">
+            </div>
+        </div>
+    </main>
+    <a href="#" class="voltar-topo" title="Voltar ao topo">↑</a>
+    <script>
+        // Mostrar/esconder botão voltar ao topo
+        window.addEventListener('scroll', function() {
+            const botao = document.querySelector('.voltar-topo');
+            if (window.scrollY > 300) {
+                botao.classList.add('visivel');
+            } else {
+                botao.classList.remove('visivel');
+            }
+        });
+    </script>
+</body>
+</html>

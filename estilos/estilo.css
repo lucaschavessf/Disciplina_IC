@@ -1,0 +1,643 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Cambria;
+}
+
+/* Estilos para o header e navegação */
+header {
+    padding: 1rem;
+    text-align: center;
+    background-color: #00548d;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+/* Estilos para links ativos no menu */
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+}
+
+nav a.active:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Estilos para títulos */
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: 700;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #34495e;
+    font-weight: 600;
+    text-align: center;
+    margin: 1.2rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    font-weight: 600;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+/* Estilos para parágrafos */
+p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 1rem 0;
+}
+
+/* Estilos para links */
+a {
+    color: #00548d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Estilos para imagens */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para tabelas */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #00548d;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #f1f3f5;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsividade para tabelas */
+@media (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    th, td {
+        padding: 0.75rem;
+    }
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    margin-top: 150px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+main p {
+    text-align: center;
+    margin: 2rem auto;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+/* Classes utilitárias */
+.esconder {
+    display: none;
+}
+
+/* Estilos para a seção de resultado */
+#resultado {
+    text-align: center;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+#resultado h3 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+/* Estilos para a seção de imagem gerada */
+#imagem-gerada {
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+/* Estilos para formulários */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+form input[type="text"] {
+    width: 80%;
+    padding: 0.8rem;
+    margin: 0 auto 1.5rem auto;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    display: block;
+}
+
+form input[type="text"]:focus {
+    outline: none;
+    border-color: #00548d;
+    box-shadow: 0 0 5px rgba(0, 84, 141, 0.2);
+}
+
+form button {
+    background-color: #00548d;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+form button:hover {
+    background-color: #003d66;
+}
+
+/* Estilos para a tabela da galeria */
+.galeria-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+.galeria-table th,
+.galeria-table td {
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.galeria-table th {
+    background-color: #00548d;
+    color: white;
+}
+
+.galeria-table img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Estilos para o formulário de contato */
+.contato-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contato-form label {
+    display: block;
+    color: #2c3e50;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.contato-form input[type="text"],
+.contato-form input[type="email"],
+.contato-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.contato-form input[type="text"]:focus,
+.contato-form input[type="email"]:focus,
+.contato-form textarea:focus {
+    outline: none;
+    border-color: #00548d;
+    box-shadow: 0 0 5px rgba(0, 84, 141, 0.2);
+}
+
+.contato-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contato-form button {
+    align-self: center;
+    background-color: #00548d;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    width: auto;
+    min-width: 150px;
+}
+
+.contato-form button:hover {
+    background-color: #003d66;
+}
+
+#esconder-imagem {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+#esconder-imagem:hover {
+    background-color: #c82333;
+}
+
+/* Estilos para a galeria com grid */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galeria-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria-item:hover {
+    transform: translateY(-5px);
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.galeria-item p {
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.galeria-item span {
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    border-top: 1px solid #eee;
+    margin-top: auto;
+}
+
+/* Responsividade para a galeria */
+@media (max-width: 900px) {
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos para o formulário de geração de imagem */
+main form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+main form label {
+    display: block;
+    color: #2c3e50;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+main form input[type="text"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+main form input[type="text"]:hover {
+    border-color: #00548d;
+    box-shadow: 0 0 8px rgba(0, 84, 141, 0.2);
+}
+
+main form input[type="text"]:focus {
+    outline: none;
+    border-color: #00548d;
+    box-shadow: 0 0 12px rgba(0, 84, 141, 0.3);
+}
+
+main form input[type="text"]:active {
+    border-color: #003d66;
+    box-shadow: 0 0 4px rgba(0, 84, 141, 0.2);
+    transform: translateY(1px);
+}
+
+main form button {
+    background-color: #00548d;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    width: auto;
+    min-width: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main form button:hover {
+    background-color: #003d66;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+main form button:active {
+    background-color: #002a4d;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+}
+
+/* Container do formulário de contato */
+.contato-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.contato-imagem {
+    display: none;
+}
+
+.contato-imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout de duas colunas para telas maiores */
+@media (min-width: 900px) {
+    .contato-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .contato-form {
+        flex: 1;
+        max-width: 500px;
+        margin: 0;
+    }
+
+    .contato-imagem {
+        display: block;
+        flex: 1;
+        max-width: 500px;
+    }
+}
+
+/* Estilos para a página Sobre */
+.sobre-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.sobre-texto {
+    padding: 1rem;
+}
+
+.sobre-texto p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+.sobre-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout de duas colunas para telas maiores */
+@media (min-width: 900px) {
+    .sobre-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .sobre-texto {
+        padding-right: 2rem;
+    }
+
+    .sobre-imagem img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Botão Voltar ao Topo */
+.voltar-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00548d;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.voltar-topo.visivel {
+    opacity: 1;
+    visibility: visible;
+}
+
+.voltar-topo:hover {
+    background-color: #003d66;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.voltar-topo:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
