@@ -22,18 +22,18 @@ JavaScript: Para adicionar interatividade, como a exibição dinâmica da imagem
 O projeto está organizado da seguinte forma:
 
 /
-|-- index.html          # Página Inicial
-|-- gerar.html          # Página para gerar imagens
-|-- galeria.html        # Página da galeria de imagens
-|-- sobre.html          # Página com informações sobre o projeto
-|-- contato.html        # Página de contato
+|-- index.html          -> Página Inicial
+|-- gerar.html          -> Página para gerar imagens
+|-- galeria.html        -> Página da galeria de imagens
+|-- sobre.html          -> Página com informações sobre o projeto
+|-- contato.html        -> Página de contato
 |
 |-- estilos/
-|   |-- estilo.css      # Estilos principais
-|   |-- responsivo.css  # Estilos para telas diferentes
+|   |-- estilo.css      -> Estilos principais
+|   |-- responsivo.css  -> Estilos para telas diferentes
 |
 |-- scripts/
-    |-- gerar.js        # Script da página de geração
+    |-- gerar.js        -> Script da página de geração
 
 ## 🚀 Como Executar
 Por ser um projeto de front-end puro, basta abrir qualquer um dos arquivos .html em um navegador web para visualizar o site. Não é necessário nenhum servidor ou processo de compilação.
