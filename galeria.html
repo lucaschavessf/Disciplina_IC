@@ -54,7 +54,33 @@
                 <p>Pintura digital</p>
                 <span>15/03/2025</span>
             </div>
+            <div class="galeria-item">
+                <img src="https://picsum.photos/300/200?random=7" alt="Imagem gerada 7">
+                <p>Design minimalista</p>
+                <span>16/03/2025</span>
+            </div>
+            <div class="galeria-item">
+                <img src="https://picsum.photos/300/200?random=8" alt="Imagem gerada 8">
+                <p>Ilustração infantil</p>
+                <span>17/03/2025</span>
+            </div>
+            <div class="galeria-item">
+                <img src="https://picsum.photos/300/200?random=9" alt="Imagem gerada 9">
+                <p>Conceito futurista</p>
+                <span>18/03/2025</span>
+            </div>
         </div>
     </main>
+    <a href="#" class="voltar-topo" title="Voltar ao topo">↑</a>
+    <script>
+        window.addEventListener('scroll', function() {
+            const botao = document.querySelector('.voltar-topo');
+            if (window.scrollY > 300) {
+                botao.classList.add('visivel');
+            } else {
+                botao.classList.remove('visivel');
+            }
+        });
+    </script>
 </body>
 </html>

@@ -22,21 +22,31 @@
     </header>
     
     <main>
-        <h2>O que é o Gerador de Imagens com IA?</h2>
-        <div class="sobre-grid">
-            <div class="sobre-texto">
-                <p>Este projeto é uma representação utilizando html e CSS para mostrar como seria feito o FrontEnd de um gerador de imagens ultilizando 
-                    Inteligência Artifical. A página galeria, seria usada como uma espécie de armazém para imagens geradas e a seção de gerar imagem, 
-                    é a página que seria pedido um promt para gerar a imagem.</p>
+        <article class="conteudo-principal">
+            <h2>O que é o Gerador de Imagens com IA?</h2>
+            <div class="sobre-grid">
+                <div class="sobre-texto">
+                    <p>Este projeto é uma representação utilizando html e CSS para mostrar como seria feito o FrontEnd de um gerador de imagens ultilizando 
+                        Inteligência Artifical. A página galeria, seria usada como uma espécie de armazém para imagens geradas e a seção de gerar imagem, 
+                        é a página que seria pedido um promt para gerar a imagem.</p>
+                </div>
+                <div class="sobre-imagem">
+                    <img src="https://img.freepik.com/free-vector/ai-technology-brain-background-vector-digital-transformation-concept_53876-124674.jpg" alt="Ilustração de Geração de Imagens com IA">
+                </div>
             </div>
-            <div class="sobre-imagem">
-                <img src="https://img.freepik.com/free-vector/ai-technology-brain-background-vector-digital-transformation-concept_53876-124674.jpg" alt="Ilustração de Geração de Imagens com IA">
-            </div>
-        </div>
+        </article>
+        <aside class="info-adicional">
+            <h3>Curiosidades sobre IA e Geração de Imagens</h3>
+            <ul>
+                <li>As IAs de geração de imagens podem criar arte em diversos estilos, desde realista até abstrato</li>
+                <li>O processo de geração de imagens com IA é chamado de "diffusion"</li>
+                <li>As IAs aprendem analisando milhões de imagens para entender padrões e estilos</li>
+                <li>É possível gerar imagens a partir de descrições textuais detalhadas</li>
+            </ul>
+        </aside>
     </main>
     <a href="#" class="voltar-topo" title="Voltar ao topo">↑</a>
     <script>
-        // Mostrar/esconder botão voltar ao topo
         window.addEventListener('scroll', function() {
             const botao = document.querySelector('.voltar-topo');
             if (window.scrollY > 300) {
