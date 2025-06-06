@@ -9,23 +9,23 @@ O objetivo deste trabalho é simular a experiência de um usuário em um serviç
 ## ✨ Funcionalidades
 O site é dividido nas seguintes seções principais:
 
-Gerar Imagens: Uma página onde o usuário pode inserir uma descrição textual (prompt) para criar uma nova imagem. O resultado é exibido dinamicamente na tela.
+**Gerar Imagens:** Uma página onde o usuário pode inserir uma descrição textual (prompt) para criar uma nova imagem. O resultado é exibido dinamicamente na tela.
 
-Galeria: Exibe uma coleção de imagens previamente geradas, servindo como um portfólio ou histórico de criações.
+**Galeria:** Exibe uma coleção de imagens previamente geradas, servindo como um portfólio ou histórico de criações.
 
-Página Inicial: Apresenta o projeto e suas funcionalidades de forma clara para o usuário.
+**Página Inicial:** Apresenta o projeto e suas funcionalidades de forma clara para o usuário.
 
-Sobre: Contém informações sobre o projeto e curiosidades sobre a tecnologia de geração de imagens por IA.
+**Sobre:** Contém informações sobre o projeto e curiosidades sobre a tecnologia de geração de imagens por IA.
 
-Contato: Um formulário para que os usuários possam enviar mensagens, dúvidas ou sugestões.
+**Contato:** Um formulário para que os usuários possam enviar mensagens, dúvidas ou sugestões.
 
 ## 🛠️ Tecnologias Utilizadas
 
-HTML5: Para a estrutura e semântica de todas as páginas.
+**HTML5:** Para a estrutura e semântica de todas as páginas.
 
-CSS3: Para estilização, layout e responsividade. O projeto utiliza Flexbox e Grid para organizar os elementos.
+**CSS3:** Para estilização, layout e responsividade. O projeto utiliza Flexbox e Grid para organizar os elementos.
 
-JavaScript: Para adicionar interatividade, como a exibição dinâmica da imagem gerada na página gerar.html e o botão "Voltar ao topo" presente em todas as páginas.
+**JavaScript:** Para adicionar interatividade, como a exibição dinâmica da imagem gerada na página gerar.html e o botão "Voltar ao topo" presente em todas as páginas.
 
 ## 📂 Estrutura de Arquivos
 O projeto está organizado da seguinte forma:
